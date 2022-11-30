@@ -1,0 +1,143 @@
+body {
+  background-color: rgb(32, 32, 32);
+  color: #f9f9f9;
+}
+
+main {
+  margin: 0 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.msgcontainer {
+  height: 50px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.newsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+
+  .newsarticle {
+    background-color: #626060;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    height: 500px;
+    width: 300px;
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 200px;
+      border-radius: 5px 5px 0 0;
+    }
+    a {
+      color: #201f1f;
+      align-items: baseline;
+    }
+    :hover {
+      color: #f9f9f9;
+    }
+  }
+}
+h1 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  height: 100%;
+  margin: 20px 0 60px;
+  div {
+    display: flex;
+    flex-direction: column;
+  }
+  input,
+  button,
+  select {
+    background-color: #a8a8a8;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  button:hover {
+    background-color: #f9f9f9;
+    color: #201f1f;
+  }
+
+  #labelCountry {
+    grid-column: 3/5;
+  }
+}
+
+.word {
+  p {
+    text-align: center;
+  }
+  form {
+    grid-template-columns: 2fr 1fr;
+  }
+  p {
+    text-transform: capitalize;
+  }
+}
+
+.facts {
+  margin: 0 15%;
+  .fact {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+.weather2Input,
+.weather1input {
+  background-color: #a8a8a8;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  color: rgb(255, 255, 255);
+  font-size: 1.2rem;
+  font-weight: bold;
+  width: 80%;
+}
+
+.weather2,
+.weather1 {
+  display: flex;
+  h2 {
+    font-size: 2rem;
+  }
+
+  .img-container {
+    width: 200px;
+  }
+  img {
+    width: 100%;
+    object-fit: contain;
+  }
+}
+
+.weather3 {
+  margin-top: 10%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  .weather2 {
+    display: block;
+  }
+  .img-container {
+    width: 100px;
+  }
+}
